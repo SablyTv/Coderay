@@ -116,14 +116,14 @@ module Encoders
 
       DIV = Template.new <<-DIV
 <div class="CodeRay">
-  <div class="code"><pre rel="<%ATTRIBUTE_NAME%>"><%CONTENT%></pre></div>
+  <div class="code"><pre rel="<%CONTENT_TYPE%>"><%CONTENT%></pre></div>
 </div>
       DIV
 
       TABLE = Template.new <<-TABLE
 <table class="CodeRay"><tr>
   <td class="line-numbers"><pre><%LINE_NUMBERS%></pre></td>
-  <td class="code"><pre rel="<%ATTRIBUTE_NAME%>"><%CONTENT%></pre></td>
+  <td class="code"><pre rel="<%CONTENT_TYPE%>"><%CONTENT%></pre></td>
 </tr></table>
       TABLE
 
